@@ -96,6 +96,7 @@ img{
   margin: 0 auto;
   overflow: hidden;
 }
+
 /* effet animation de l'image */ 
 
 #pokemon-image {
@@ -211,6 +212,7 @@ img{
 
 .pokedex-right {
   color: white;
+  margin-top: 35px;
 }
 
 .pokedex-right .container {
