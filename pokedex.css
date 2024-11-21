@@ -245,6 +245,7 @@ img{
 .pokedex-right ul{
   padding-left: 20px;
   list-style-type:disc;
+  margin-top: 20px;
 }
 
 .pokedex-right strong{
