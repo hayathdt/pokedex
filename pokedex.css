@@ -1,6 +1,13 @@
+:root {
+    --pokedex-red: #FF0000;
+    --pokedex-dark: #CC0000;
+    --screen-bg: #98CB98;
+    --info-screen-bg: #9298A4;
+}
+
 body{
     background-color : #e6d5d5; 
-    font-family: "Arial", "sans-serif";
+    font-family: 'Segoe UI', Tahoma, "Arial", "sans-serif";
     margin: 0;
     padding: 0;
     display: flex; 
@@ -16,4 +23,85 @@ body{
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
+    display: flex;
+    gap: 10px;
 }
+
+.pokedex-left, .pokedex-right {
+    background: var(--pokedex-red);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+
+
+/* left side */
+
+.image-container {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+img{
+  background: var(--screen-bg);
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .directional-pad {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .directional-pad button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .up { 
+    top: 0; 
+    left: 35px; 
+    border-radius: 5px 5px 0 0; 
+}
+  .right { 
+    right: 0; 
+    top: 35px; 
+    border-radius: 0 5px 5px 0; 
+}
+  .down { 
+    bottom: 0; 
+    left: 35px; 
+    border-radius: 0 0 5px 5px; 
+}
+  .left { 
+    left: 0;
+    top: 35px; 
+    border-radius: 5px 0 0 5px; 
+}
+  .center {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+  }
+
+/* right side */
