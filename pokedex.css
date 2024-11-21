@@ -10,10 +10,27 @@ body{
     font-family: 'Segoe UI', Tahoma, "Arial", "sans-serif";
     margin: 0;
     padding: 0;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
 }
+
+header{
+  width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1{
+  font-size: 3rem;
+  color: var(--pokedex-dark);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 4px;
+  font-weight: bold;
+  background: linear-gradient(45deg, var(--pokedex-red), var(--pokedex-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px;
+}
+
 
 .pokedex-card{
     background-color: #f0f0f0;
@@ -65,7 +82,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  margin: 0 auto;
   overflow: hidden;
 }
 .controls {
@@ -132,3 +149,32 @@ img{
   }
 
 /* right side */
+
+.pokedex-right h2{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.pokedex-right ol{
+  list-style: none;
+  padding-left: 0;
+}
+
+.pokedex-right ol li{
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.pokedex-right ul{
+  padding-left: 20px;
+  list-style-type:disc;
+}
+
+.pokedex-right strong{
+  color: #222;
+  font-weight: bold;
+}
