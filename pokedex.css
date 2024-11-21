@@ -68,6 +68,17 @@ main {
 
 /* left side */
 
+.pokedex-left h2 {
+  color: rgb(211, 233, 133);
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
 .image-container {
   background: #222;
   padding: 20px;
@@ -198,7 +209,17 @@ img{
 
 /* right side */
 
-.pokedex-right h2{
+.pokedex-right {
+  color: white;
+}
+
+.pokedex-right .container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.pokedex-right h3 {
   color: white;
   text-align: center;
   font-size: 1.5rem;
@@ -240,7 +261,4 @@ img{
   border-radius: 50%;
   margin: 0 auto;
 }
-
-
-
 
