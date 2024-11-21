@@ -97,13 +97,23 @@ img{
   position: relative;
   }
   
-  .directional-pad button {
+.directional-pad button {
     position: absolute;
     width: 30px;
     height: 30px;
     background: #222;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
   
   .up { 
@@ -177,4 +187,8 @@ img{
 .pokedex-right strong{
   color: #222;
   font-weight: bold;
+}
+
+.pokedex-right ol:last-child {
+  margin-bottom: 10px;
 }
