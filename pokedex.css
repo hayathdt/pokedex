@@ -1,8 +1,8 @@
 :root {
     --pokedex-red: #FF0000;
     --pokedex-dark: #CC0000;
-    --screen-bg: #98CB98;
-    --info-screen-bg: #9298A4;
+    --image-bg: #98CB98;
+    --info-image-bg: #9298A4;
 }
 
 body{
@@ -38,14 +38,14 @@ body{
 /* left side */
 
 .image-container {
-  background: #111;
+  background: #222;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 img{
-  background: var(--screen-bg);
+  background: var(--image-bg);
   height: 200px;
   border-radius: 5px;
   display: flex;
@@ -102,6 +102,14 @@ img{
     width: 30px;
     height: 30px;
     background: #222;
+  }
+
+.circle-button {
+    width: 50px;
+    height: 50px;
+    background: #222;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
 /* right side */
