@@ -18,7 +18,7 @@ header{
     margin-bottom: 40px;
 }
 
-h1{
+h1 {
   font-size: 3rem;
   color: var(--pokedex-dark);
   text-transform: uppercase;
@@ -26,10 +26,12 @@ h1{
   letter-spacing: 4px;
   font-weight: bold;
   background: linear-gradient(45deg, var(--pokedex-red), var(--pokedex-dark));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 20px;
 }
+
 
 
 .pokedex-card{
