@@ -37,6 +37,23 @@ body{
 
 /* left side */
 
+.image-container {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+img{
+  background: var(--screen-bg);
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
 .controls {
     display: flex;
     justify-content: space-between;
