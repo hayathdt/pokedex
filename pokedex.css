@@ -111,5 +111,8 @@ img{
     border-radius: 50%;
     cursor: pointer;
   }
+  .icon {
+    width : 25px;
+  }
 
 /* right side */
