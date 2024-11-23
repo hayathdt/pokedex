@@ -92,10 +92,10 @@ main {
   background-color: var(--image-bg);
   border: 10px solid #0c0c0c;
   overflow: hidden;
+  position: relative;
 }
 
 img{
-  
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -104,6 +104,23 @@ img{
   align-items: center;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.image-container::after, .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0) 4px
+  ); 
+  z-index: 2;
 }
 
 /* effet animation de l'image */ 
@@ -195,8 +212,9 @@ img{
 }
   .center {
     position: absolute;
-    top: 35px;
-    left: 35px;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
     background: #222;
@@ -231,6 +249,7 @@ img{
   background: white;
   padding: 20px;
   border-radius: 8px;
+  position: relative;
 }
 
 .pokedex-right h3 {
@@ -339,4 +358,21 @@ img{
     height: 40px;
     font-size: 12px;
   }
+  .up, .down, .center {
+    left: 27px; 
+  }
+  .left, .right, .center {
+    top: 27px; 
+  }
+
+  .center {
+    width: 25px; 
+    height: 25px;
+    transform: translate(0, 0);
+  }
+  .circle-button{
+    font-size: 10px;
+  }
 }
+
+
