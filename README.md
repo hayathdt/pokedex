@@ -13,12 +13,6 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
 
 ## **Fonctionnalités implémentées**
 
-### **HTML (index.html)**
-- Structure sémantique avec header et footer
-- Card Pokémon responsive
-- Utilisation des balises appropriées pour l'accessibilité
-- Intégration des métadonnées pour le SEO
-
 ### **CSS (style.css)**
 - Design moderne avec Flexbox
 - Variables CSS pour la cohérence des couleurs
@@ -37,11 +31,12 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
 
 ## **Style et Design**
 - Palette de couleurs :
-  - Jaune principal : `#FDD835`
-  - Noir : `#212121`
-  - Blanc : `#FFFFFF`
-  - Gris clair : `#F5F5F5`
-- Police principale : 'Roboto', sans-serif
+    --pokedex-red: #FF0000;
+    --pokedex-dark: #CC0000;
+    --image-bg: #60c960;
+    --info-image-bg: #9298A4;
+
+- Police principale : 'Segoe UI', Tahoma, "Arial", "sans-serif"
 - Ombres et effets de profondeur
 - Animations sur les interactions
 
@@ -49,7 +44,6 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
 
 - **Structure générale** :  
   - Présentation sous forme de carte (ou fiche) centrée sur la page.  
-  - Police principale : une police sans-serif comme **Arial**, ou une police personnalisée comme **Pokemon Solid** (téléchargeable).  
   - Couleurs principales : **jaune** (rappelant Pikachu), avec des touches de **noir** et **blanc** pour le contraste.  
   - Bordure : Ajoutez une bordure autour de la carte, avec des coins arrondis.  
 
