@@ -76,5 +76,5 @@ Ajoutez une touche d'interactivité avec JavaScript :
 
 1. **Cloner le projet** :
 
-git clone <URL du dépôt>
+git clone https://github.com/hayathdt/pokedex
 
