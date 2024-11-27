@@ -7,28 +7,33 @@
 }
 
 body{
-    background-image: url(https://wallpapers.com/images/hd/pikachu-background-ztbho1pih1rev6x2.jpg);
+    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700735945.jpg);
     font-family: 'Segoe UI', Tahoma, "Arial", "sans-serif";
     margin: 0;
     padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+
 }
 
 body::after{
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; 
-  background: repeating-linear-gradient(
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.1) 2px,
-      rgba(0, 0, 0, 0) 2px,
-      rgba(0, 0, 0, 0) 4px
-  );
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.1) 2px,
+        rgba(0, 0, 0, 0) 2px,
+        rgba(0, 0, 0, 0) 4px
+    );
+    z-index: 0;
 }
 
 header{
@@ -84,6 +89,7 @@ main {
   padding: 20px;
   border-radius: 10px;
   width: 300px;
+  height: 800px;
   height: fit-content;
   box-shadow: 0 5px 10px 5px rgba(102, 15, 15, 0.555); 
   }
@@ -103,11 +109,12 @@ main {
 
 #type-container{
   width: 100%;
-  height: auto;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px auto;
+  text-align: center;
+
 }
 
 #type-container p{
@@ -116,14 +123,17 @@ main {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: bold;
   font-family: silkscreen;
-  font-size: 20px;
+  font-size: 25px;
+  margin: 0;
   padding: 10px;
+  width: fit-content;
 }
 
-#type-container img{
-  width: 80px;
+#pokemon-type, #pokemon-type2{
+  width: 40px;
   height: auto;
   margin: 0 auto;
+  flex-wrap: nowrap;
 }
 
 .image-container {
@@ -135,6 +145,8 @@ main {
   border: 10px solid #0c0c0c;
   overflow: hidden;
   position: relative;
+  width: 80%;
+  height: auto;
 }
 
 img{
@@ -225,7 +237,7 @@ img{
     justify-content: center;
     align-items: center;
     padding: 5px;
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, 0.3);
   }
   
   .material-symbols-outlined {
@@ -295,6 +307,30 @@ img{
   position: relative;
 }
 
+.pokedex-right li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pokedex-right li:nth-child(2) div {
+  display: inline-flex;
+  gap: 5px;
+}
+
+#image-type, #image-type2 {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+#image-type2:not([src]), 
+#image-type2[src=""] {
+    display: none;
+}
+
 .pokedex-right h3 {
   color: var(--text-info);
   text-align: center;
@@ -320,6 +356,7 @@ img{
   padding-left: 20px;
   list-style-type:disc;
   margin-top: 20px;
+  font-size: 15px;
 }
 
 .pokedex-right strong{

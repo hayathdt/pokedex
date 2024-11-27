@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alata&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bungee+Tint&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquard+24&family=Jacquard+24+Charted&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/914/914726.png">
     <title>Pokedex</title>
 </head>
 <body>
@@ -17,15 +18,16 @@
   <main>
     <section class="pokedex">
       <div class="pokedex-left">
-        <div class="type-circle"><img src="Pokémon_Electric_Type_Icon.svg" alt="Electric type icon" class="type-icon" ></div>
-        <h2 id="pokemon-name"> </h2>
+        <h2 id="pokemon-name">Bulbizarre</h2>
         <div id ="type-container">
-        <p id="pokemon-type"></p>
-        <img src="" alt="pokemon type" id="image-type">
-        <img src="" alt="Pokemon" id="image-type2">
+        <p id="pokemon-type">Poison/Plante</p>
+        <!--
+        <img src="https://static.wikia.nocookie.net/pokemongo/images/0/05/Poison.png" alt="pokemon type" id="image-type">
+        <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c5/Grass.png" id="image-type2">
+        -->
       </div>
         <div class="image-container">
-          <img src="" alt="Pokemon" id="pokemon-image">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon" id="pokemon-image">
           
         </div>
         
@@ -49,16 +51,23 @@
       </div>
 
       <div class="pokedex-right">
-          <h3>Fonctionnalité</h3>
+          <h3>DESCRIPTION</h3>
           <div class="container">   
           <ol>
-           <li><strong>Nom: </strong> Pikachu</li>
-           <li><strong>Type: </strong>Electrique  <img src="Pokémon_Electric_Type_Icon.svg" alt="Electric type icon" class="type-icon"></i> 
-           <li><strong>Caractéristique: </strong>
+           <li id="pokemon-name2"><strong>Nom: </strong> Bulbizarre</li>
+           <li><strong>Type: </strong>
+            <div>
+              <img src="https://static.wikia.nocookie.net/pokemongo/images/0/05/Poison.png" alt=" type icon" id="image-type">
+            <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c5/Grass.png" id="image-type2">
+            </div></li>
+           <li><strong>Statistiques: </strong>
              <ul>
-               <li><strong>Poids: </strong></li>
-               <li><strong>Taille: </strong></li>
-               <li><strong>Description: </strong>Pikachu est un Pokémon de type électrique connu pour ses joues chargées d'électricité.</li>
+               <li id="hp"><strong>HP: </strong>45</li>
+               <li id="attack"><strong>Attaque: </strong>49</li>
+               <li id="defense"><strong>Défense: </strong>49</li>
+               <li id="special-attack"><strong>Attaque spéciale: </strong>65</li>
+               <li id="special-defense"><strong>Défense spéciale: </strong>65</li>
+               <li id="speed"><strong>Vitesse: </strong>45</li>
              </ul>
            </li>
           </ol>
