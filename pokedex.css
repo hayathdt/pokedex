@@ -101,6 +101,31 @@ main {
   font-family: silkscreen;
 }
 
+#type-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px auto;
+}
+
+#type-container p{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-family: silkscreen;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#type-container img{
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
 .image-container {
   background: #222;
   padding: 20px;
