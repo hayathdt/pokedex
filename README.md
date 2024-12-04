@@ -10,6 +10,7 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
 ## **Technologies utilisées**
 - HTML5
 - CSS3
+- JavaScript
 
 ## **Fonctionnalités implémentées**
 
@@ -21,13 +22,16 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
 - Effets de transition fluides
 
 ### **Contenu**
-1. **Nom du Pokémon** : Pikachu  
-2. **Type du Pokémon** : Électrique  
-3. **Photo** : Image HD de Pikachu  
-4. **Caractéristiques** :  
-   - **Poids** : 6 kg  
-   - **Taille** : 0,4 m  
-   - **Description** : Pikachu est un Pokémon de type électrique connu pour ses joues chargées d'électricité
+1. **Nom du Pokémon**   
+2. **Type du Pokémon** 
+3. **Photo**   
+4. **Descriptions** : 
+   - **HP** 
+   - **Attaque**
+   - **Défense**
+   - **Vitesse**
+   - **Attaque spéciale**
+   - **Défense spéciale**
 
 ## **Style et Design**
 - Palette de couleurs :
@@ -35,6 +39,7 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
     --pokedex-dark: #CC0000;
     --image-bg: #60c960;
     --info-image-bg: #9298A4;
+    --text-info: #cfc3c3d2;
 
 - Police principale : 'Segoe UI', Tahoma, "Arial", "sans-serif"
 - Ombres et effets de profondeur
@@ -43,32 +48,29 @@ Ce projet consiste à créer une page web interactive pour un Pokédex centré s
 ## **Instructions de style (CSS)**
 
 - **Structure générale** :  
-  - Présentation sous forme de carte (ou fiche) centrée sur la page.  
-  - Couleurs principales : **jaune** (rappelant Pikachu), avec des touches de **noir** et **blanc** pour le contraste.  
-  - Bordure : Ajoutez une bordure autour de la carte, avec des coins arrondis.  
+  - Présentation sous forme de carte centrée sur la page.  
+  - Couleurs principales : **rouge** (rappelant le Pokedex traditionnel).
+  - Bordure : bordure autour de la carte, avec des coins arrondis.  
 
 - **Mise en page** :  
   - Une section pour le **nom** du Pokémon en haut, bien mise en avant.  
-  - Une **image centrale** de Pikachu (réduite proportionnellement).  
-  - Une liste des **caractéristiques** (poids, taille, type) en dessous.  
+  - Une section pour le **type** du Pokémon en dessous. 
+  - Une **image centrale** du Pokémon avec un effet rappellant les écrans(lignes à répétition).  
+  - Une liste des **caractéristiques** (type, vitesses, attaque...) en dessous.  
 
 - **Effets interactifs** :  
   - **Hover** : Transitions pour que les éléments changent de couleur ou grossissent légèrement au survol.  
-  - **Animation** : Faites briller le nom ou l'image avec une animation CSS simple.
+
 
 ---
 
 ## **Option JavaScript**
 
-Ajoutez une touche d'interactivité avec JavaScript :  
-1. **Effet dynamique** :  
-   - Au clic sur l'image de Pikachu, affichez un message comme : *"Pika Pika !"* dans une boîte de dialogue ou un élément texte en dessous.  
+**Chargement conditionnel** :  
+- Utilisez JavaScript pour charger dynamiquement les caractéristiques à partir d'un tableau ou d'un fichier JSON.
 
-2. **Changement de thème** :  
-   - Ajoutez un bouton permettant de changer le thème des couleurs de la carte (par exemple, un thème sombre).  
-
-3. **Chargement conditionnel** :  
-   - Utilisez JavaScript pour charger dynamiquement les caractéristiques à partir d'un tableau ou d'un fichier JSON.
+**Pad directionnel** :
+- Utilisez JavaScript pour naviguer sur le Pokedex lorsque l'utilisateur clique sur les boutons directionnels.
 
 ---
 
